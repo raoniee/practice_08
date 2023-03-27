@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원티드</title>
+    <link rel="stylesheet" href="./css/grid.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header class="TopHeader">
+        <nav class="gnb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2 MainBar">
+                        <button><i class="xi-bars"></i></button>
+                        <!-- <ul>
+                        <li><a href="">직군 전체</a></li>
+                        <li><a href="">개발</a></li>
+                        <li><a href="">경영·비즈니스</a></li>
+                        <li><a href="">마케팅·광고</a></li>
+                        <li><a href="">디자인</a></li>
+                        <li><a href="">영업</a></li>
+                        <li><a href="">고객서비스·리테일</a></li>
+                        <li><a href="">게임 제작</a></li>
+                        <li><a href="">미디어</a></li>
+                        <li><a href="">HR</a></li>
+                        </ul> -->
+                        <h1><a href="">Wanted</a></h1>
+                    </div>
+                    <div class="col-9 col-md-7 Menu">
+                        <ul>
+                            <li class="max-size"><a href="">홈</a></li>
+                            <li><a href="">채용</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li class="min-size"><a href="">직군별 연봉</a></li>
+                            <li class="min-size"><a href="">이력서</a></li>
+                            <li class="min-size"><a href="">커뮤니티</a></li>
+                            <li class="min-size"><a href="">프리랜서</a></li>
+                            <li class="min-size"><a href="">AI 합격예측</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-md-3 PlusMenu">
+                        <aside>
+                            <ul>
+                                <li><button><a href=""><i class="xi-search"></i></a></button></li>
+                                <li><button><a href=""><i class="xi-bell-o"></i></a></button></li>
+                                <li class="max-size"><button><a href=""><i class="xi-ellipsis-h"></i></a></button></li>
+                                <li class="min-size"><button><a href=""><i class="xi-profile-o"></i></a></button></li>
+                            </ul>
+                            <button class="min-size companyservice"><a href="">기업 서비스</a></button>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="TopBanner">
+            <div class="container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide row" data-bs-ride="carousel">
+                    <div class="carousel-inner col-10 col-md-12">
+                        <div class="carousel-item active">
+                            <a href=""><img src="./img/mainslide01.webp" class="d-block w-100" alt="..."></a>
+                            <div class="slide_slogan">
+                                <h2 class="slide_title">직장인 유형 테스트</h2>
+                                <h3 class="slide_desc">회사를 고를 때, 나는 어떤 유형일까요?</h3>
+                                <span class="slide_a"><a href="">바로가기 ></a></span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href=""><img src="./img/mainslide02.webp" class="d-block w-100" alt="..."></a>
+                            <div class="slide_slogan">
+                                <h2 class="slide_title">IT 세일즈 리드 현직자 인터뷰</h2>
+                                <h3 class="slide_desc">슬랙, 마이크로소프트, 한국신용데이터, 채널톡</h3>
+                                <span class="slide_a"><a href="">바로가기 ></a></span>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href=""><img src="./img/mainslide03.webp" class="d-block w-100" alt="..."></a>
+                            <div class="slide_slogan">
+                                <h2 class="slide_title">HR 업무, 이게 최선일까?</h2>
+                                <h3 class="slide_desc">[무료 웨비나] SaaS를 활용한 생산성 높이기</h3>
+                                <span class="slide_a"><a href="">바로가기 ></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="InSite">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 insite_title">
+                        <h1>나에게 필요한 커리어 인사이트<button><a href=""><i class="xi-help-o"></i></a></button></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 insite_menu">
+                        <ul>
+                            <li><button><a href="">IT/기술</a></button></li>
+                            <li><button><a href="">커리어고민</a></button></li>
+                            <li><button><a href="">데이터</a></button></li>
+                            <li><button><a href="">개발</a></button></li>
+                            <li><button><a href="">취업/이직</a></button></li>
+                            <li class="min-size"><button><a href="">인관관계</a></button></li>
+                            <li class="min-size"><button><a href="">리더십</a></button></li>
+                            <li class="min-size"><button><a href="">HR</a></button></li>
+                            <li class="min-size"><button><a href="">서비스기획</a></button></li>
+                            <li class="min-size"><button><a href="">경영/전략</a></button></li>
+                            <li class="min-size"><button><a href="">UX/UI</a></button></li>
+                            <li class="min-size"><button><a href="">라이프스타일</a></button></li>
+                            <!-- <li class="min-size"><button><a href="">마케팅</a></button></li>
+                            <li class="min-size"><button><a href="">디자인</a></button></li>
+                            <li class="min-size"><button><a href="">회사생활</a></button></li>
+                            <li class="min-size"><button><a href="">노무</a></button></li>
+                            <li class="min-size"><button><a href="">MD</a></button></li>
+                            <li class="min-size"><button><a href="">콘텐츠 제작</a></button></li>
+                            <li class="min-size"><button><a href="">브랜딩</a></button></li>
+                            <li class="min-size"><button><a href="">조직문화</a></button></li> -->
+                        </ul>
+                        <div class="insite_menubar">
+                            <button><a href=""><i class="xi-ellipsis-h"></i></a></button>
+                            <!-- <div>
+                            <ul>
+                                <li><button><a href="">IT/기술</a></button></li>
+                                <li><button><a href="">커리어고민</a></button></li>
+                                <li><button><a href="">데이터</a></button></li>
+                                <li><button><a href="">개발</a></button></li>
+                                <li><button><a href="">취업/이직</a></button></li>
+                                <li><button><a href="">인관관계</a></button></li>
+                                <li><button><a href="">리더십</a></button></li>
+                                <li><button><a href="">HR</a></button></li>
+                                <li><button><a href="">서비스기획</a></button></li>
+                                <li><button><a href="">경영/전략</a></button></li>
+                                <li><button><a href="">UX/UI</a></button></li>
+                                <li><button><a href="">라이프스타일</a></button></li>
+                                <li><button><a href="">마케팅</a></button></li>
+                                <li><button><a href="">디자인</a></button></li>
+                                <li><button><a href="">회사생활</a></button></li>
+                                <li><button><a href="">노무</a></button></li>
+                                <li><button><a href="">MD</a></button></li>
+                                <li><button><a href="">콘텐츠 제작</a></button></li>
+                                <li><button><a href="">브랜딩</a></button></li>
+                                <li><button><a href="">조직문화</a></button></li>
+                            </ul>
+                            <p>요즘 내 관심사 선택하고 맞춤 콘텐츠 받기!<a href="">관심태그 설정하기</a></p>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row figure">
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_01.webp" class="figure_pic" alt="">
+                            <span class="figure_title">돈이 먼저일까요, 행복이 먼저일까요?</span>
+                            <p class="figure_desc">보상과 맞바꾼 워라밸, 그 안에서 돈과 행복의 우선순위에 대해 고민하는 직장인</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>한국인성컨설팅&마인드클리닉 노주선</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_02.webp" class="figure_pic" alt="">
+                            <span class="figure_title">PM이 되려면 어떤 교육을 받아야 할까?</span>
+                            <p class="figure_desc">2022년 기준, PM이 되기 위해 받을 수 있는 교육 과정은 크게 두 가지가 있습니다. PM 부트캠프와 HCI
+                                석사과정인데요,
+                                아래 글에 이 두 교육 과정의 장단점과 저의 생각을 정리했습니다. PM으로 진로를 잡은
+                                후, 무엇을 어디로 배우러 가야 할지 막막할 때 참고하길 추천합니다. 제가 현재 학생이 아니기 때문에 두 교육 과정에 대한 학생 분들의 의</p>
+                            <div class="figure_source">
+                                <img src="./img/logo02.webp" alt="">
+                                <p>이연주</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_03.webp" class="figure_pic" alt="">
+                            <span class="figure_title">서류전형, 실제로 그러할까? - 임휘진</span>
+                            <p class="figure_desc">머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성 노하우들...커리어를 고민하는 또 한 사람의 직장인으로서,
+                                그리고
+                                호기심 많은 데이터분석가로서, '잘 쓴' 이력서에서는 그 노하우들이 어떻게 구현되었는지
+                                늘 궁금했습니다.오늘은 이력서 분석 콘텐츠의 두 번째 영상으로 서류전형의 비밀에 대해 살펴봤습니다.이 영상의 여러분의 서류 합격률을 높이는 데 도움이 되기를
+                                바랍니다.</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>원티드랩 임휘진</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_04.webp" class="figure_pic" alt="">
+                            <span class="figure_title">보상은 있지만 성장은 없는 곳</span>
+                            <p class="figure_desc">보상은 있지만 성장할 수 없다고 느껴지는 회사에서 이직을 고민하는 직장인의 실제 사연을 통해 ‘직장생활의 리얼리티’를
+                                들여다보고,
+                                현실을 극복하기 위한 방법에 대해 이야기합니다. 지금보다 더 행복하고 즐거운
+                                직장생활을 위해, 그리고 나의 연봉과 커리어의 성장을 위해!</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>한국인성컨설팅&마인드클리닉 노주선</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_05.webp" class="figure_pic" alt="">
+                            <span class="figure_title">Talk : 면접을부탁해 - 전체직군</span>
+                            <p class="figure_desc">다수의 면접에 참여하면서 알게 된 합격하는 vs 불합격하는 면접자의 차이,면접관이 궁금해하는 점 등 면접자가 면접을 준비할
+                                때
+                                도움이 될만한 이야기를 공유합니다.
+                            </p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>원티드랩 이하나</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_06.webp" class="figure_pic" alt="">
+                            <span class="figure_title">잘나가는 기업의 포지션 제안, 내가 잘 할 수 있을까?</span>
+                            <p class="figure_desc">“얼마 전 좋은 포지션을 제안받았어요. 포지션은 매력적인데 제가 그 포지션을 잘 해낼 준비가 되어 있지 않은 거 같아요.
+                                어떡하죠?”</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>Wanted</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_07.webp" class="figure_pic" alt="">
+                            <span class="figure_title">‘아…이 회사 때려칠까?’ 고민이 든다면</span>
+                            <p class="figure_desc">고연차의 직장인들은 이직을 하기 위해 더 치열하게 준비하고 그 이직에 대한 필요와 명분이 명확해야 한다는 것이다. 고연차
+                                직장인들의
+                                이직, 저연차의 이직과 무엇이 다르고 어떻게 준비해야 하는지 고민해보자.</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>Wanted</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_08.webp" class="figure_pic" alt="">
+                            <span class="figure_title">나의 커리어는 어디로 가는가</span>
+                            <p class="figure_desc">커리어를 이대로 쌓아가도 괜찮을지 고민하는 직장인의 실제 사연을 통해 ‘직장생활의 리얼리티’를 들여다보고, 현실을 극복하기
+                                위한
+                                방법에 대해 이야기합니다. 지금보다 더 행복하고 즐거운 직장생활을 위해, 그리고 나의
+                                연봉과 커리어의 성장을 위해!</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>한국인성컨설팅&마인드클리닉 노주선</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_09.webp" class="figure_pic" alt="">
+                            <span class="figure_title">독일 취업 사례로 보는 유럽 취업 A to Z</span>
+                            <p class="figure_desc">언어, 문화 차이 등을 차치하고라도 개발 관련 직무 능력만 있다면, 언어나 학력, 기존 직업 등 업무와 큰 관련이 없는
+                                보통의 평가
+                                잣대가 필요치 않기 때문이다.</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>Wanted</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_10.webp" class="figure_pic" alt="">
+                            <span class="figure_title">예시 사례를 살펴보는 실제 이력서 작성법 - 백승엽</span>
+                            <p class="figure_desc">오늘은 실제 예시를 통해 이력서를 작성하는 방법에 대해 알아봅니다.지난 영상에서 이력서가 무엇인지 살펴봤다면, 이번
+                                영상에서는
+                                이력서를 잘 쓰는 구체적인 방법에 대해 알아봅니다.</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>원티드랩 백승엽</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_11.webp" class="figure_pic" alt="">
+                            <span class="figure_title">모든 것이 대표 마음대로인 회사</span>
+                            <p class="figure_desc">모든 것이 대표 마음대로인 회사에서 이직을 고민하는 직장인의 실제 사연을 통해 ‘직장생활의 리얼리티’를 들여다보고, 현실을
+                                극복하기
+                                위한 방법에 대해 이야기합니다. 지금보다 더 행복하고 즐거운 직장생활을 위해,
+                                그리고 나의 연봉과 커리어의 성장을 위해!</p>
+                            <div class="figure_source">
+                                <img src="./img/logo01.webp" alt="">
+                                <p>한국인성컨설팅&마인드클리닉 노주선</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="">
+                            <img src="./img/i_12.webp" class="figure_pic" alt="">
+                            <span class="figure_title">? 첫사랑부터 개발공부법, 퇴사썰까지.. 다 들려드립니다 | 더 핏쨔 라이브 Q&A</span>
+                            <p class="figure_desc">보상과 맞바꾼 워라밸, 그 안에서 돈과 행복의 우선순위에 대해 고민하는 직장인</p>
+                            <div class="figure_source">
+                                <img src="./img/logo03.webp" alt="">
+                                <p>테헤란밸리</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row figure_more">
+                    <div class="col-12 col-md-4">
+                        <a href="">더 많은 콘텐츠 보기<i class="xi-angle-down-min"></i></a>
+                    </div>
+                </div>
+                <div class="row test_company">
+                    <div class="col-12">
+                        <a href="">
+                            <div class="slogan">
+                                <span>나와 잘 맞는 회사는?</span>
+                                <p>유형테스트 하러가기 ></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row recommend max-size">
+                    <div class="col-12">
+                        <a href="">
+                            <div class="slogan">
+                                <span>즐겨보는 크리에이터의 글도 추천하고 싶다면?</span>
+                                <p>크리에이터 추천하기 ></p>
+                            </div>
+                            <img src="./img/banner01.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Employment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="employment_title">채용 정보를 찾고 계셨나요?</h2>
+                    </div>
+                </div>
+                <div class="row employment_boxs">
+                    <div class="col-6 col-md-3 box1">
+                        <a href="">
+                            <i class="xi-search"></i>
+                            <p>채용공고 ></p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 box2">
+                        <a href="">
+                            <i class="xi-user-o"></i>
+                            <p>내 프로필 ></p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 box3">
+                        <a href="">
+                            <i class="xi-building"></i>
+                            <p>매치업 ></p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 box4">
+                        <a href="">
+                            <i class="xi-tune"></i>
+                            <p>직군별 연봉 ></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row top">
+                <div class="col-12 col-md-2 footer_logo">
+                    <a href="">
+                        <img src="./img/logo01.webp" alt="">
+                        <p>wanted</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 footer_list">
+                    <ul>
+                        <li><a href="">기업소개</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">개인정보 처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 footer_link">
+                    <ul>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                        <li><a href=""><i class="xi-facebook-official"></i></a></li>
+                        <li><a href=""><i class="xi-google-play"></i></a></li>
+                        <li><a href=""><i class="xi-apple"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bottom">
+                <div class="col-12 col-md-12 footer_address">
+                    <p>
+                        (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147<br />
+                        유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021 | 02-539-7118 <br />
+                        © Wantedlab, Inc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
