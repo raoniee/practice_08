@@ -149,6 +149,10 @@ textarea:active {
 }
 
 /* TopBanner */
+.TopBanner .swiper {
+    width: 95%;
+}
+
 .TopBanner h2,
 .TopBanner h3,
 .TopBanner a {
@@ -159,6 +163,7 @@ textarea:active {
     margin: 20px 0;
     height: 220px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .TopBanner .slide_title {
@@ -182,6 +187,11 @@ textarea:active {
     padding-top: 80px;
     padding-bottom: 50px;
     border-bottom: 1px solid #ddd;
+}
+
+.InSite .insite_title {
+    position: relative;
+
 }
 
 .InSite .insite_title h1 {
@@ -210,7 +220,7 @@ textarea:active {
     border-radius: 15px;
     font-size: 14px;
     line-height: 2.5;
-    color: #777;
+    color: #8a8a8a;
 }
 
 .InSite .insite_menubar a {
@@ -450,8 +460,14 @@ footer {
     line-height: 16px;
 }
 
+/* * {
+    outline: 1px solid #363;
+} */
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
+
+    /* reset CSS */
     .max-size {
         display: none;
     }
@@ -460,45 +476,74 @@ footer {
         display: block;
     }
 
+    .click {
+        display: none;
+    }
+
     /* TopHeader */
     .TopHeader {
-        height: 78px;
+        height: 50px;
     }
 
-    .Menu ul {
-        justify-content: space-between;
-        margin-top: 17px;
+    .TopHeader .MainBar i {
+        line-height: 50px;
     }
 
-    .Menu ul li a {
-        padding: 0 12px;
+    .TopHeader .MainBar h1 {
+        margin-bottom: 0;
+    }
+
+    .TopHeader .MainBar h1 a {
+        display: block;
+        line-height: 50px;
+    }
+
+    .TopHeader .MainBar,
+    .TopHeader .Menu ul,
+    .TopHeader .PlusMenu ul {
+        height: 50px;
+        margin: 0;
+    }
+
+    .TopHeader .Menu ul {
+        justify-content: start;
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    .TopHeader .Menu ul li:hover {
+        border-bottom: 3px solid #8a8a8a;
+    }
+
+    .TopHeader .Menu ul li a {
+        padding: 0 20px;
         font-size: 14px;
-        line-height: 3;
+        line-height: 50px;
     }
 
-    .Menu,
-    .PlusMenu {
-        height: 78px;
+    .TopHeader .Menu ul li a .TopHeader .Menu,
+    .TopHeader .PlusMenu {
+        height: 50px;
     }
 
-    .PlusMenu aside {
+    .TopHeader .PlusMenu aside {
         display: flex;
         justify-content: space-between;
     }
 
-    .PlusMenu aside ul {
+    .TopHeader .PlusMenu aside ul {
         justify-content: stretch;
-        margin-top: 8px;
+        margin-top: 0px;
     }
 
-    .PlusMenu aside i {
+    .TopHeader .PlusMenu aside i {
         display: inline-block;
         padding: 0 5px;
         font-size: 22px;
-        line-height: 60px;
+        line-height: 50px;
     }
 
-    .PlusMenu aside .companyservice a {
+    .TopHeader .PlusMenu aside .companyservice a {
         position: relative;
         display: inline-block;
         padding: 6px 8px;
@@ -509,7 +554,7 @@ footer {
         color: #444;
     }
 
-    .PlusMenu aside .companyservice a::after {
+    .TopHeader .PlusMenu aside .companyservice a::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -521,14 +566,40 @@ footer {
     }
 
     /* TopBanner */
+    .TopBanner .topbanner_wrap {
+        position: relative;
+    }
+
+    .TopBanner .swiper {
+        width: 1295px;
+    }
+
+    .TopBanner .button-prev,
+    .TopBanner .button-next {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        width: 30px;
+        height: 60px;
+        background-color: #f7f7f7;
+        border-radius: 20px;
+    }
+
+    .TopBanner .button-prev {
+        transform: translate(-50%, -50%);
+        margin-left: -720px;
+    }
+
+    .TopBanner .button-next {
+        transform: translate(-50%, -50%);
+        margin-left: 720px;
+    }
+
     .TopBanner h2,
     .TopBanner h3,
     .TopBanner a {
         text-align: left;
-    }
-
-    .TopBanner .carousel-item {
-        position: relative;
     }
 
     .TopBanner img {
@@ -557,6 +628,36 @@ footer {
         color: #777;
     }
 
+    .InSite .career_content {
+        position: absolute;
+        top: 40px;
+        left: 480px;
+        width: 400px;
+        height: 133px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid black;
+        z-index: 999;
+    }
+
+    .InSite .career_content span {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .InSite .career_content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .InSite .career_content button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
     .InSite .insite_menu {
         display: flex;
         justify-content: space-between;
@@ -570,8 +671,64 @@ footer {
         line-height: 2.5;
     }
 
+    .InSite .insite_menu .blue {
+        border: 1px solid #36f;
+        color: #36f;
+    }
+
     .InSite .insite_menu a:hover {
-        background-color: #ddd;
+        background-color: #f7f7f7;
+    }
+
+    .InSite .insite_menu .insite_menubar>button>a {
+        border-radius: 4px;
+    }
+
+    .InSite .insite_menu .insite_menubar>button .bgblue {
+        background-color: #36f;
+        color: #fff;
+    }
+
+    .InSite .insite_menu .more_insite_menubar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+        border: 1px solid #e1e2e4;
+        border-radius: 4px;
+        z-index: 999;
+    }
+
+    .InSite .insite_menu .click {
+        display: none;
+    }
+
+    .InSite .insite_menu .more_insite_menubar>ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e1e2e4;
+    }
+
+    .InSite .insite_menu .more_insite_menubar a {
+        white-space: nowrap;
+    }
+
+    .InSite .insite_menu .more_insite_menubar p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .InSite .insite_menu .more_insite_menubar p>a {
+        border-style: none;
+        color: #36f;
+        text-decoration: underline;
+        text-decoration-color: #36f;
     }
 
     .InSite .figure {

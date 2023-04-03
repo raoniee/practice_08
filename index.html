@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="./css/grid.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="./main.js" defer></script>
 </head>
 
@@ -68,10 +70,10 @@
 
     <main>
         <section class="TopBanner">
-            <div class="container">
-                <div id="carouselExampleSlidesOnly" class="carousel slide row" data-bs-ride="carousel">
-                    <div class="carousel-inner col-10 col-md-12">
-                        <div class="carousel-item active">
+            <div class="topbanner_wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <a href=""><img src="./img/mainslide01.webp" class="d-block w-100" alt="..."></a>
                             <div class="slide_slogan">
                                 <h2 class="slide_title">직장인 유형 테스트</h2>
@@ -79,16 +81,15 @@
                                 <span class="slide_a"><a href="">바로가기 ></a></span>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="swiper-slide">
                             <a href=""><img src="./img/mainslide02.webp" class="d-block w-100" alt="..."></a>
                             <div class="slide_slogan">
                                 <h2 class="slide_title">IT 세일즈 리드 현직자 인터뷰</h2>
                                 <h3 class="slide_desc">슬랙, 마이크로소프트, 한국신용데이터, 채널톡</h3>
                                 <span class="slide_a"><a href="">바로가기 ></a></span>
                             </div>
-
                         </div>
-                        <div class="carousel-item">
+                        <div class="swiper-slide">
                             <a href=""><img src="./img/mainslide03.webp" class="d-block w-100" alt="..."></a>
                             <div class="slide_slogan">
                                 <h2 class="slide_title">HR 업무, 이게 최선일까?</h2>
@@ -98,6 +99,8 @@
                         </div>
                     </div>
                 </div>
+                <button class="button-next min-size"><i class="xi-angle-right-min"></i></button>
+                <button class="button-prev min-size"><i class="xi-angle-left-min"></i></button>
             </div>
         </section>
 
@@ -106,12 +109,21 @@
                 <div class="row">
                     <div class="col-12 col-md-12 insite_title">
                         <h1>나에게 필요한 커리어 인사이트<button><a href=""><i class="xi-help-o"></i></a></button></h1>
+                        <div class="career_content min-size click">
+                            <span>취직/이직 준비하시기도 바쁘시죠? 😎</span>
+                            <p>
+                                커리어 인사이트, 이제 따로 찾지 말고 원티드에서 만나보세요!<br />
+                                검증된 IT업계 전문가들이 다양한 채널에서 생산하는 커리어<br />
+                                콘텐츠를 선별해서 관심 태그 기반으로 제공해 드립니다.
+                            </p>
+                            <button><i class="xi-close"></i></button>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12 insite_menu">
                         <ul>
-                            <li><button><a href="">IT/기술</a></button></li>
+                            <li><button><a class="blue" href="">IT/기술</a></button></li>
                             <li><button><a href="">커리어고민</a></button></li>
                             <li><button><a href="">데이터</a></button></li>
                             <li><button><a href="">개발</a></button></li>
@@ -133,32 +145,32 @@
                             <li class="min-size"><button><a href="">조직문화</a></button></li> -->
                         </ul>
                         <div class="insite_menubar">
-                            <button><a href=""><i class="xi-ellipsis-h"></i></a></button>
-                            <!-- <div>
-                            <ul>
-                                <li><button><a href="">IT/기술</a></button></li>
-                                <li><button><a href="">커리어고민</a></button></li>
-                                <li><button><a href="">데이터</a></button></li>
-                                <li><button><a href="">개발</a></button></li>
-                                <li><button><a href="">취업/이직</a></button></li>
-                                <li><button><a href="">인관관계</a></button></li>
-                                <li><button><a href="">리더십</a></button></li>
-                                <li><button><a href="">HR</a></button></li>
-                                <li><button><a href="">서비스기획</a></button></li>
-                                <li><button><a href="">경영/전략</a></button></li>
-                                <li><button><a href="">UX/UI</a></button></li>
-                                <li><button><a href="">라이프스타일</a></button></li>
-                                <li><button><a href="">마케팅</a></button></li>
-                                <li><button><a href="">디자인</a></button></li>
-                                <li><button><a href="">회사생활</a></button></li>
-                                <li><button><a href="">노무</a></button></li>
-                                <li><button><a href="">MD</a></button></li>
-                                <li><button><a href="">콘텐츠 제작</a></button></li>
-                                <li><button><a href="">브랜딩</a></button></li>
-                                <li><button><a href="">조직문화</a></button></li>
-                            </ul>
-                            <p>요즘 내 관심사 선택하고 맞춤 콘텐츠 받기!<a href="">관심태그 설정하기</a></p>
-                        </div> -->
+                            <button><a class="" href=""><i class="xi-ellipsis-h"></i></a></button>
+                            <div class="more_insite_menubar click">
+                                <ul>
+                                    <li class="min-size"><button><a href="">IT/기술</a></button></li>
+                                    <li class="min-size"><button><a href="">커리어고민</a></button></li>
+                                    <li class="min-size"><button><a href="">데이터</a></button></li>
+                                    <li class="min-size"><button><a href="">개발</a></button></li>
+                                    <li class="min-size"><button><a href="">취업/이직</a></button></li>
+                                    <li class="min-size"><button><a href="">인관관계</a></button></li>
+                                    <li class="min-size"><button><a href="">리더십</a></button></li>
+                                    <li class="min-size"><button><a href="">HR</a></button></li>
+                                    <li class="min-size"><button><a href="">서비스기획</a></button></li>
+                                    <li class="min-size"><button><a href="">경영/전략</a></button></li>
+                                    <li class="min-size"><button><a href="">UX/UI</a></button></li>
+                                    <li class="min-size"><button><a href="">라이프스타일</a></button></li>
+                                    <li class="min-size"><button><a href="">마케팅</a></button></li>
+                                    <li class="min-size"><button><a href="">디자인</a></button></li>
+                                    <li class="min-size"><button><a href="">회사생활</a></button></li>
+                                    <li class="min-size"><button><a href="">노무</a></button></li>
+                                    <li class="min-size"><button><a href="">MD</a></button></li>
+                                    <li class="min-size"><button><a href="">콘텐츠 제작</a></button></li>
+                                    <li class="min-size"><button><a href="">브랜딩</a></button></li>
+                                    <li class="min-size"><button><a href="">조직문화</a></button></li>
+                                </ul>
+                                <p>요즘 내 관심사 선택하고 맞춤 콘텐츠 받기!<a href="">관심태그 설정하기</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
